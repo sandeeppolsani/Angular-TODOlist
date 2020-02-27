@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { EventEmitter } from 'protractor';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Project1';
+  // @Input() changevent=new EventEmitter();
+  isaddopen=false;
+  openadd()
+  {
+    this.isaddopen=true;
+  }
+  closeadd()
+  {
+    this.isaddopen=false;
+  }
+  changed()
+  {
+    
+  }
 }
+

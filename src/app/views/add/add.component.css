@@ -1,0 +1,80 @@
+.container
+{
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    padding: 0px 0px;
+    box-shadow: 5px 5px 5px indianred;
+    border: 1px  solid indianred;
+}
+.title
+{
+    padding: 20px 10px;
+    width: 100%;
+    margin: 0 !important;
+    letter-spacing: normal;
+    background-color: rgb(202, 235, 235);
+}
+
+.inp
+{
+    font-size: large;
+    border: 0;
+    width: 80%;
+    line-height: 40px;
+    border-bottom: 1px solid black;
+}
+.inp:focus
+{
+    border-color: blueviolet;
+    
+}
+.input-field
+{
+    padding: 10px 20px;
+    display: block;
+    margin: 10px;
+}
+.input-field span
+{
+    
+}
+.btn
+{
+    padding: 0.5rem 1.6rem;
+    line-height: 20px;
+    background-color: rgb(40, 40, 92);
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+}
+.fleft
+{
+    float: left;
+}
+.fright
+{
+    float: right;
+}
+.close
+{
+    color:red;
+    line-height: 35px;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent !important;
+}
+.both
+{
+    clear: both;
+}
+.flex
+{
+    display: flex;
+}
+.flex-right
+{
+    flex-direction: row-reverse;
+}

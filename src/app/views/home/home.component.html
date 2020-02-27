@@ -1,0 +1,32 @@
+<div class="container ">
+<!-- <div class="title">Your List of Todo</div> -->
+    <!-- <hr/> -->
+    <div class="des" *ngIf="activeindex!=null">
+        <div class="close fright" (click)="hidedescription()">X</div>
+    <div class="title">Title: {{title}}</div>
+        <div class="description">
+            <br>
+        {{description}}
+        </div>
+    </div>
+    <div class="d-table">
+        <tr>
+            <th>
+                S.No
+            </th>
+            <th>Title</th>
+            <th>Actions</th>
+        </tr>
+        <tr *ngFor="let item of data">
+            <td>
+                {{item.id}}
+            </td>
+        <td>{{item.title}}</td>
+            <td class="flex space-around">
+                <input type="button" (click)="delete(item)" class="btn red" value="Delete">
+                <button class="btn primary " *ngIf="item.id!=activeindex" (click)="showdescription(item.id)" >Show Details</button>
+                <button class="btn " *ngIf="item.id==activeindex" (click)="hidedescription()" >Hide</button>
+            </td>
+        </tr>
+    </div>
+</div>
